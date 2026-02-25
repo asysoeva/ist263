@@ -27,3 +27,20 @@ nav a {
 nav a:hover {
   background-color: #1F2937;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2 {
+  color: darkblue;
+}
+.evenrow {
+  background-color: lightgray;
+}
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
