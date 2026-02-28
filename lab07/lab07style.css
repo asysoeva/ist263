@@ -44,3 +44,68 @@ h1 {
 h2 {
   font-size: 1.5em;
 }
+
+
+
+body {
+  background-color: #0B1320;
+  color: #F5F7FF;
+  font-family: Arial, sans-serif;
+}
+
+/* Links */
+a {
+  color: #7DD3FC;
+}
+
+a:visited {
+  color: #93C5FD;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #FDE68A;
+}
+
+/* Nav */
+nav {
+  background-color: #111827;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 6px 8px;
+}
+
+nav a:hover {
+  background-color: #1F2937;
+}
+
+/* Table colors (keep zebra using your .evenrow class) */
+table {
+  color: #F5F7FF;
+  border-color: #334155; /* border color on dark bg */
+}
+
+th {
+  background-color: #111827;
+  color: #F5F7FF;
+}
+
+td, th {
+  border-color: #334155; /* overrides your black borders visually */
+}
+
+/* Zebra shading stays exactly on evenrow like your HTML */
+.evenrow {
+  background-color: #0F172A;
+}
+
+/* Optional: caption color so it’s readable */
+caption {
+  color: #F5F7FF;
+  padding: 8px;
+}
