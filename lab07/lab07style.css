@@ -59,3 +59,7 @@ caption {
   color: #4a2c1a;
   padding: 8px;
 }
+
+nav a {
+  color: #2B1A12 !important;
+}
