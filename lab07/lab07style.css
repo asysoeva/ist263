@@ -100,11 +100,14 @@ td, th {
 }
 
 /* Zebra shading stays exactly on evenrow like your HTML */
-.evenrow {
-  background-color: #0F172A;
+tr {
+  background-color: #0B1320; /* base row */
 }
 
-/* Optional: caption color so it’s readable */
+.evenrow {
+  background-color: #1E3A8A; /* brighter blue stripe */
+}
+
 caption {
   color: #F5F7FF;
   padding: 8px;
