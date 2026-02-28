@@ -60,3 +60,13 @@ caption {
   padding: 8px;
 }
 
+nav a:link,
+nav a:visited {
+  color: #2B1A12;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #ffad60;
+  color: #ffffff;
+}
