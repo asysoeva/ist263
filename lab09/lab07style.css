@@ -111,13 +111,12 @@ main {
 
 .skillsbox {
   display: flex;
-  flex-basis: 50%;
-  background-color: #e8e8e8;
-  border-radius: 20px;
-  padding: 40px;
   gap: 40px;
   align-items: center;
   justify-content: center;
+  background-color: #e8e8e8;
+  border-radius: 20px;
+  padding: 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
