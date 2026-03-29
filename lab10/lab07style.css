@@ -130,6 +130,12 @@ main {
 
 .skillstable {
   flex-basis: 50%;
+  width: 100%;
+}
+
+.tablewrap {
+  width: 100%;
+  overflow-x: auto;
 }
 
 .skillsimage {
@@ -203,5 +209,60 @@ caption {
   .skillsimage {
     flex-basis: auto;
     width: 100%;
+  }
+
+  .skillsbox {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .technicalskills {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+
+  .skillsimage img {
+    max-width: 220px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  td, th {
+    padding: 6px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    margin: 8px;
+    padding: 8px;
+  }
+
+  main {
+    margin: 8px;
+  }
+
+  .skillsbox {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .technicalskills {
+    font-size: 1.5em;
+  }
+
+  table {
+    font-size: 12px;
+    min-width: 500px;
+  }
+
+  td, th {
+    padding: 5px;
+  }
+
+  .skillsimage img {
+    max-width: 180px;
   }
 }
