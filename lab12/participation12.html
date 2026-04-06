@@ -5,24 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Participation 12</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
         #schoolname {
-            font-size: 40px;
+            font-size: 48px;
             cursor: pointer;
         }
     </style>
+
     <script>
         function changeText() {
             let school = document.getElementById("schoolname");
-            school.innerHTML = "Orange Nation";
-            school.style.color = "orange";
+
+            if (school.innerHTML === "Syracuse University") {
+                school.innerHTML = "Orange Nation";
+                school.style.color = "orange";
+            } else {
+                school.innerHTML = "Syracuse University";
+                school.style.color = "black";
+            }
         }
     </script>
 </head>
 <body>
-
     <div id="schoolname" onclick="changeText()">
         Syracuse University
     </div>
-
 </body>
 </html>
