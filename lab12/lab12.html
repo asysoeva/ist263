@@ -5,35 +5,49 @@
     <title>Lab 12 Slideshow</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #111111;
+            color: #ffffff;
         }
 
-        #banner {
-            width: 800px;
-            margin: 0 auto;
+        #slideshow-container {
+            background-color: #000000;
+            width: 1200px;
+            margin: auto;
+            padding: 20px;
         }
 
-        #bigplanets {
+        #bigimages {
             float: left;
-            margin-right: 20px;
+            margin-right: 50px;
         }
 
         #planetinfo {
             float: left;
-            width: 350px;
+            width: 500px;
         }
 
-        #thumbs {
+        #thumbnails {
             clear: both;
+            width: 840px;
+            margin: auto;
             padding-top: 20px;
         }
 
-        /* keep mercury on, hide the rest */
+        #mercurythumb, #venusthumb, #earththumb, #marsthumb,
+        #jupiterthumb, #saturnthumb, #uranusthumb, #neptunethumb {
+            width: 100px;
+            margin: 2px;
+        }
+
+        /* hide all large images except mercury */
         #venus, #earth, #mars, #jupiter, #saturn, #uranus, #neptune {
             display: none;
         }
 
-        #venusinfo, #earthinfo, #marsinfo, #jupiterinfo, #saturninfo, #uranusinfo, #neptuneinfo {
+        /* hide all text except mercury info */
+        #venusinfo, #earthinfo, #marsinfo, #jupiterinfo,
+        #saturninfo, #uranusinfo, #neptuneinfo {
             display: none;
         }
     </style>
@@ -100,73 +114,76 @@
         }
     </script>
 </head>
+
 <body>
-    <div id="banner">
-        <h1>Planets Slideshow</h1>
+<div id="slideshow-container">
 
-        <div id="thumbs">
-            <img src="../images/mercury-thumb.png" alt="Mercury thumbnail" onclick="PlanetsOff(); MercuryOn();">
-            <img src="../images/venus-thumb.png" alt="Venus thumbnail" onclick="PlanetsOff(); VenusOn();">
-            <img src="../images/earth-thumb.png" alt="Earth thumbnail" onclick="PlanetsOff(); EarthOn();">
-            <img src="../images/mars-thumb.png" alt="Mars thumbnail" onclick="PlanetsOff(); MarsOn();">
-            <img src="../images/jupiter-thumb.png" alt="Jupiter thumbnail" onclick="PlanetsOff(); JupiterOn();">
-            <img src="../images/saturn-thumb.png" alt="Saturn thumbnail" onclick="PlanetsOff(); SaturnOn();">
-            <img src="../images/uranus-thumb.png" alt="Uranus thumbnail" onclick="PlanetsOff(); UranusOn();">
-            <img src="../images/neptune-thumb.png" alt="Neptune thumbnail" onclick="PlanetsOff(); NeptuneOn();">
+    <h1>Planets Slideshow</h1>
+
+    <div id="bigimages">
+        <img src="https://peopel-su.github.io/ist263/images/mercury.jpg" alt="mercury" id="mercury">
+        <img src="https://peopel-su.github.io/ist263/images/venus.jpg" alt="venus" id="venus">
+        <img src="https://peopel-su.github.io/ist263/images/earth.jpg" alt="earth" id="earth">
+        <img src="https://peopel-su.github.io/ist263/images/mars.jpg" alt="mars" id="mars">
+        <img src="https://peopel-su.github.io/ist263/images/jupiter.jpg" alt="jupiter" id="jupiter">
+        <img src="https://peopel-su.github.io/ist263/images/saturn.jpg" alt="saturn" id="saturn">
+        <img src="https://peopel-su.github.io/ist263/images/uranus.jpg" alt="uranus" id="uranus">
+        <img src="https://peopel-su.github.io/ist263/images/neptune.jpg" alt="neptune" id="neptune">
+    </div>
+
+    <div id="planetinfo">
+        <div id="mercuryinfo">
+            <h2>Mercury</h2>
+            <p>Mercury is the smallest and innermost planet in the Solar System. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the planets in the Solar System. It is named after the Greek god Hermes, translated into Latin as Mercurius.</p>
         </div>
 
-        <div id="bigplanets">
-            <img id="mercury" src="../images/mercury.png" alt="Mercury">
-            <img id="venus" src="../images/venus.png" alt="Venus">
-            <img id="earth" src="../images/earth.png" alt="Earth">
-            <img id="mars" src="../images/mars.png" alt="Mars">
-            <img id="jupiter" src="../images/jupiter.png" alt="Jupiter">
-            <img id="saturn" src="../images/saturn.png" alt="Saturn">
-            <img id="uranus" src="../images/uranus.png" alt="Uranus">
-            <img id="neptune" src="../images/neptune.png" alt="Neptune">
+        <div id="venusinfo">
+            <h2>Venus</h2>
+            <p>Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the second brightest natural object in the night sky after the Moon, Venus can cast shadows and can sometimes be visible in daylight.</p>
         </div>
 
-        <div id="planetinfo">
-            <div id="mercuryinfo">
-                <h2>Mercury</h2>
-                <p>Mercury is the smallest and innermost planet in the Solar System.</p>
-            </div>
+        <div id="earthinfo">
+            <h2>Earth</h2>
+            <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life. About 29 percent of Earth's surface is land, while the rest is covered with water.</p>
+        </div>
 
-            <div id="venusinfo">
-                <h2>Venus</h2>
-                <p>Venus is the second planet from the Sun and is named after the Roman goddess of love and beauty.</p>
-            </div>
+        <div id="marsinfo">
+            <h2>Mars</h2>
+            <p>Mars is a terrestrial planet with a thin atmosphere. Its surface features include impact craters, valleys, deserts, and polar ice caps.</p>
+        </div>
 
-            <div id="earthinfo">
-                <h2>Earth</h2>
-                <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life.</p>
-            </div>
+        <div id="jupiterinfo">
+            <h2>Jupiter</h2>
+            <p>Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant and one of the brightest objects visible in the night sky.</p>
+        </div>
 
-            <div id="marsinfo">
-                <h2>Mars</h2>
-                <p>Mars is a terrestrial planet with a thin atmosphere and surface features like valleys, deserts, and polar ice caps.</p>
-            </div>
+        <div id="saturninfo">
+            <h2>Saturn</h2>
+            <p>Saturn is the sixth planet from the Sun and the second largest in the Solar System. It is best known for its large and beautiful ring system.</p>
+        </div>
 
-            <div id="jupiterinfo">
-                <h2>Jupiter</h2>
-                <p>Jupiter is the fifth planet from the Sun and the largest planet in the Solar System.</p>
-            </div>
+        <div id="uranusinfo">
+            <h2>Uranus</h2>
+            <p>Uranus is the seventh planet from the Sun. It has the third largest planetary radius in the Solar System and is named after the Greek god of the sky.</p>
+        </div>
 
-            <div id="saturninfo">
-                <h2>Saturn</h2>
-                <p>Saturn is the sixth planet from the Sun and is known for its rings.</p>
-            </div>
-
-            <div id="uranusinfo">
-                <h2>Uranus</h2>
-                <p>Uranus is the seventh planet from the Sun and has the third-largest planetary radius in the Solar System.</p>
-            </div>
-
-            <div id="neptuneinfo">
-                <h2>Neptune</h2>
-                <p>Neptune is the eighth and farthest-known planet from the Sun in the Solar System.</p>
-            </div>
+        <div id="neptuneinfo">
+            <h2>Neptune</h2>
+            <p>Neptune is the eighth and farthest known planet from the Sun. It is a giant planet and is slightly more massive than Uranus.</p>
         </div>
     </div>
+
+    <div id="thumbnails">
+        <img src="https://peopel-su.github.io/ist263/images/mercury.jpg" alt="mercury thumbnail" id="mercurythumb" onclick="PlanetsOff(); MercuryOn();">
+        <img src="https://peopel-su.github.io/ist263/images/venus.jpg" alt="venus thumbnail" id="venusthumb" onclick="PlanetsOff(); VenusOn();">
+        <img src="https://peopel-su.github.io/ist263/images/earth.jpg" alt="earth thumbnail" id="earththumb" onclick="PlanetsOff(); EarthOn();">
+        <img src="https://peopel-su.github.io/ist263/images/mars.jpg" alt="mars thumbnail" id="marsthumb" onclick="PlanetsOff(); MarsOn();">
+        <img src="https://peopel-su.github.io/ist263/images/jupiter.jpg" alt="jupiter thumbnail" id="jupiterthumb" onclick="PlanetsOff(); JupiterOn();">
+        <img src="https://peopel-su.github.io/ist263/images/saturn.jpg" alt="saturn thumbnail" id="saturnthumb" onclick="PlanetsOff(); SaturnOn();">
+        <img src="https://peopel-su.github.io/ist263/images/uranus.jpg" alt="uranus thumbnail" id="uranusthumb" onclick="PlanetsOff(); UranusOn();">
+        <img src="https://peopel-su.github.io/ist263/images/neptune.jpg" alt="neptune thumbnail" id="neptunethumb" onclick="PlanetsOff(); NeptuneOn();">
+    </div>
+
+</div>
 </body>
 </html>
