@@ -2,49 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tennis - Anastasia Sysoeva</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <h1>Anastasia Sysoeva</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="tennis.html">Tennis</a>
-            <a href="skills.html">Skills/Projects/Contact</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tennis.html" class="active">Tennis</a></li>
+                <li><a href="skills.html">Skills/Projects/Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <img src="images/tennis-banner.jpg" alt="Tennis court or tennis action photo">
+        <section class="banner-section">
+            <img src="images/tennis-banner.jpg" alt="Tennis banner image">
         </section>
 
-        <section>
-            <article>
+        <section class="cards-section">
+            <article class="feature-box">
                 <h2>My Tennis Journey</h2>
-                <p>Starting from the age of five, tennis has been a defining rhythm of my life. From local tournaments to competing at a national level, match play has taught me resilience, discipline, and the pursuit of excellence on court.</p>
+                <p>Tennis has been a major part of my life from a young age. Over time, it became much more than a sport. It taught me how to stay focused, compete under pressure, and keep improving through both success and setbacks.</p>
             </article>
 
-            <article>
-                <h2>Student Athlete Life</h2>
-                <p>Balancing a rigorous academic schedule with hours of weekly training has shaped my mindset. Being a student-athlete means time management, maintaining peak condition, and representing my institution with pride.</p>
+            <article class="feature-box">
+                <h2>Student-Athlete Life</h2>
+                <p>Being a Division I athlete means balancing training, travel, recovery, and academics at the same time. That experience has strengthened my time management, accountability, and ability to stay organized under pressure.</p>
             </article>
 
-            <article>
-                <h2>Achievements, Leadership, and Stats</h2>
+            <article class="feature-box">
+                <h2>Achievements and Leadership</h2>
                 <ul>
-                    <li>Team Captain, Division I Tennis Team</li>
-                    <li>All-Conference First Team</li>
-                    <li>Top collegiate rankings in doubles competition</li>
-                    <li>Strong academic performance as a student-athlete</li>
-                    <li>Extensive tournament and match experience</li>
+                    <li>Competed as a Division I tennis player at Syracuse University</li>
+                    <li>Built leadership skills through team competition and daily accountability</li>
+                    <li>Balanced athletics with a demanding academic schedule</li>
+                    <li>Developed discipline, resilience, and consistency through competition</li>
                 </ul>
             </article>
         </section>
 
-        <section>
+        <section class="image-row">
             <img src="images/racket.jpg" alt="Tennis racket and ball">
-            <img src="images/action-photo.jpg" alt="Anastasia Sysoeva playing tennis">
+            <img src="images/action-photo.jpg" alt="Tennis action photo">
             <img src="images/court.jpg" alt="Outdoor tennis court">
         </section>
     </main>

@@ -2,56 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home - Anastasia Sysoeva</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <h1>Anastasia Sysoeva</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="tennis.html">Tennis</a>
-            <a href="skills.html">Skills/Projects/Contact</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="tennis.html">Tennis</a></li>
+                <li><a href="skills.html">Skills/Projects/Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <img src="images/portfolio-photo.jpg" alt="Anastasia Sysoeva holding a tennis racket">
-            <article>
+        <section class="hero">
+            <div class="hero-image">
+                <img src="images/portfolio-photo.jpg" alt="Anastasia Sysoeva holding a tennis racket">
+            </div>
+
+            <div class="hero-text">
                 <h2>Welcome to my Portfolio</h2>
-                <p>I am a Division I student-athlete at Syracuse University, bridging the gap between high-performance athletics and data-driven financial analysis. Explore my journey through tennis and my technical projects.</p>
-            </article>
+                <p>I am a Division I student-athlete at Syracuse University studying Finance and Information Management &amp; Technology with a concentration in Data Analytics. My experiences in athletics and academics have shaped the way I approach leadership, discipline, and problem solving.</p>
+                <p>This site highlights my journey as a tennis player, student, and aspiring business and data professional.</p>
+            </div>
         </section>
 
-        <section>
-            <article>
+        <section class="cards-section">
+            <article class="card">
                 <h2>Tennis</h2>
-                <p>D1 Athlete Experience</p>
+                <p>Division I student-athlete experience, training, leadership, and competitive growth.</p>
             </article>
 
-            <article>
+            <article class="card">
                 <h2>Academics</h2>
-                <p>Finance and Analytics</p>
+                <p>Finance, analytics, and coursework that connect business thinking with technical skills.</p>
             </article>
 
-            <article>
+            <article class="card">
                 <h2>Projects</h2>
-                <p>Python and R Work</p>
+                <p>Examples of work in Python, R, SQL, and data analysis.</p>
             </article>
         </section>
 
-        <section>
+        <section class="two-column">
             <article>
                 <h2>About Me</h2>
-                <p>Originally from Sarasota, Florida, I balance a rigorous training schedule with a deep interest in financial modeling and data automation. I enjoy solving complex problems using modern technical tools.</p>
+                <p>I am originally from Sarasota, Florida, and I currently attend Syracuse University as a student-athlete on the women’s tennis team. Balancing a demanding practice and travel schedule with academics has helped me grow into a disciplined and adaptable person. I am especially interested in finance, analytics, and using technical tools to solve real problems.</p>
             </article>
 
             <article>
                 <h2>Quick Facts</h2>
-                <p><strong>University:</strong> Syracuse University</p>
-                <p><strong>Major:</strong> Finance and Information Management &amp; Technology</p>
-                <p><strong>Sport:</strong> Division I Tennis</p>
-                <p><strong>Location:</strong> Syracuse, New York</p>
+                <ul class="facts-list">
+                    <li><strong>University:</strong> Syracuse University</li>
+                    <li><strong>Major:</strong> Finance and Information Management &amp; Technology</li>
+                    <li><strong>Concentration:</strong> Data Analytics</li>
+                    <li><strong>Sport:</strong> Division I Tennis</li>
+                    <li><strong>Hometown:</strong> Sarasota, Florida</li>
+                </ul>
             </article>
         </section>
     </main>
