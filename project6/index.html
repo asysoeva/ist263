@@ -2,62 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home - Anastasia Sysoeva</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <h1>Anastasia Sysoeva</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="tennis.html">Tennis</a>
-            <a href="skills.html">Skills/Projects/Contact</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="tennis.html">Tennis</a></li>
+                <li><a href="skills.html">Skills/Projects/Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <img src="images/portfolio-photo.jpg" alt="Anastasia Sysoeva holding a tennis racket">
-            <article>
+    <main class="container">
+        <section class="hero">
+            <div class="hero-photo">
+                <img src="images/portfolio-photo.jpg" alt="Anastasia Sysoeva holding a tennis racket">
+            </div>
+
+            <div class="hero-box">
                 <h2>Welcome to my Portfolio</h2>
-                <p>I am a Division I student-athlete at Syracuse University, bridging the gap between high-performance athletics and data-driven financial analysis. Explore my journey through tennis and my technical projects.</p>
-            </article>
+                <p>I am a Division I student-athlete at Syracuse University, combining the discipline of high-level tennis with strong interests in finance, technology, and data analytics.</p>
+                <p>This portfolio highlights my academic background, student-athlete experience, and selected technical projects.</p>
+            </div>
         </section>
 
-        <section>
-            <article>
+        <section class="three-boxes">
+            <article class="small-box">
+                <div class="circle"></div>
                 <h2>Tennis</h2>
                 <p>D1 Athlete Experience</p>
             </article>
 
-            <article>
+            <article class="small-box">
+                <div class="circle"></div>
                 <h2>Academics</h2>
-                <p>Finance and Analytics</p>
+                <p>Finance &amp; Analytics</p>
             </article>
 
-            <article>
+            <article class="small-box">
+                <div class="circle"></div>
                 <h2>Projects</h2>
-                <p>Python and R Work</p>
+                <p>Python &amp; R Work</p>
             </article>
         </section>
 
-        <section>
-            <article>
+        <section class="bottom-section">
+            <article class="about-box">
                 <h2>About Me</h2>
-                <p>Originally from Sarasota, Florida, I balance a rigorous training schedule with a deep interest in financial modeling and data automation. I enjoy solving complex problems using modern technical tools.</p>
+                <p>Originally from Sarasota, Florida, I balance a demanding training schedule with strong academic interests in finance, analytics, and problem solving. Being a student-athlete has taught me how to stay disciplined, organized, and consistent while managing multiple responsibilities.</p>
             </article>
 
-            <article>
+            <article class="facts-box">
                 <h2>Quick Facts</h2>
-                <p><strong>University:</strong> Syracuse University</p>
-                <p><strong>Major:</strong> Finance and Information Management &amp; Technology</p>
-                <p><strong>Sport:</strong> Division I Tennis</p>
-                <p><strong>Location:</strong> Syracuse, New York</p>
+                <ul>
+                    <li><strong>University:</strong> Syracuse University</li>
+                    <li><strong>Major:</strong> Finance</li>
+                    <li><strong>Second Major:</strong> IM&amp;T</li>
+                    <li><strong>Sport:</strong> D1 Tennis</li>
+                    <li><strong>Location:</strong> New York</li>
+                </ul>
             </article>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Anastasia Sysoeva. Student Portfolio Project.</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Anastasia Sysoeva. Student Portfolio Project</p>
     </footer>
 </body>
 </html>
