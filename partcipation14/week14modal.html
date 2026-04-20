@@ -13,20 +13,22 @@
             padding: 5px;
         }
 
+        /* write CSS to position our subscribe form and hide it when the page loads here */
         #modal {
             position: absolute;
-            width: 400px;
-            top: 300px;
-            left: 600px;
+            width: 300px;
+            top: 400px;
+            left: 500px;
             background-color: burlywood;
             padding: 1em;
-            border: 1px black solid;
+            border: 2px black solid;
             display: none;
         }
 
         #close {text-align: right; cursor: pointer;}
     </style>
     <script>
+        /* add code to open and close our subscribe form */
         function openModal() {
             document.getElementById('modal').style.display = 'block';
         }
@@ -50,17 +52,16 @@
 
         <p><a class="button" onclick="openModal();">Subscribe to Our Newsletter</a></p>
 
-        <div id="modal">
-            <p id="close" onclick="closeModal();">X</p>
-            <form>
-                <label for="name">Name</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email</label><br>
-                <input type="text" id="email" name="email"><br>
-                <input type="submit" value="Subscribe">
-            </form>
-        </div>
+        <!-- make a subscribe form here -->
+<div id="modal">
+    <p id="close" onclick="closeModal()">X</p>
+    <form>
+        <label for="email">Enter your Email address</label><br>
+        <input type="text" name="email" id="email"><br>
+        <input type="submit" value="Subscribe">
+    </form>
+</div>
 
-    </div>
+</div>
 </body>
 </html>
