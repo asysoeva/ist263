@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8fcff;
+    color: #023E8A;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 36px 32px 70px 32px;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 36px;
+    border-bottom: 1px solid #90E0EF;
+    background-color: #ffffff;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #023E8A;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 34px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0077B6;
+    font-size: 1.05rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #023E8A;
+}
+
+.nav-links a.active {
+    color: #023E8A;
+    font-weight: 700;
+    border-bottom: 3px solid #0077B6;
+    padding-bottom: 5px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 55px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    max-width: 310px;
+    width: 100%;
+    display: block;
+}
+
+.hero-text-box {
+    flex: 2;
+    background-color: #ffffff;
+    border: 1px solid #90E0EF;
+    border-left: 6px solid #0077B6;
+    border-radius: 14px;
+    padding: 34px 32px;
+}
+
+.hero-text-box h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 2rem;
+    color: #023E8A;
+}
+
+.hero-text-box p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #0077B6;
+}
+
+.feature-cards {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 55px;
+}
+
+.feature-card {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #90E0EF;
+    border-top: 5px solid #0077B6;
+    border-radius: 14px;
+    text-align: center;
+    padding: 30px 20px;
+    min-height: 160px;
+}
+
+.feature-card:nth-child(2) {
+    border-top: 5px solid #023E8A;
+}
+
+.feature-card:nth-child(3) {
+    border-top: 5px solid #90E0EF;
+}
+
+.icon-circle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #CAF0F8;
+    margin: 0 auto 20px auto;
+}
+
+.feature-card h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+    color: #023E8A;
+}
+
+.feature-card p {
+    margin: 0;
+    color: #0077B6;
+    font-size: 0.98rem;
+}
+
+.info-section {
+    display: flex;
+    gap: 38px;
+}
+
+.info-box {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #90E0EF;
+    border-radius: 14px;
+    padding: 28px;
+}
+
+.info-box h2 {
+    font-size: 1.85rem;
+    color: #023E8A;
+    margin-top: 0;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #CAF0F8;
+}
+
+.info-box p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #0077B6;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    row-gap: 18px;
+    column-gap: 20px;
+    font-size: 1.15rem;
+    color: #0077B6;
+}
+
+.facts-grid strong {
+    color: #023E8A;
+}
+
+.site-footer {
+    border-top: 1px solid #90E0EF;
+    text-align: center;
+    padding: 26px 20px;
+    color: #0077B6;
+    font-size: 0.98rem;
+    background-color: #ffffff;
+}
+
+@media only screen and (max-width: 900px) {
+    .site-header,
+    .hero,
+    .feature-cards,
+    .info-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-text-box,
+    .feature-card,
+    .info-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        padding: 20px 16px 40px 16px;
+    }
+
+    .site-header {
+        padding: 20px 16px;
+    }
+
+    .site-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero-text-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text-box p,
+    .info-box p,
+    .facts-grid {
+        font-size: 1rem;
+    }
+
+    .info-box h2 {
+        font-size: 1.4rem;
+    }
+}
