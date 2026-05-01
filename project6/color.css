@@ -248,6 +248,86 @@ img {
     object-position: center;
 }
 
+/* TENNIS PAGE SPACING */
+
+.three-column {
+    margin-top: 55px;
+    margin-bottom: 90px;
+}
+
+.photo-grid {
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+.photo-box {
+    height: 250px;
+    background-color: #f1f2f4;
+    overflow: hidden;
+}
+
+.photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* BOTTOM VIDEO SECTION */
+
+.video-section {
+    margin: 30px auto 90px;
+    padding: 35px;
+    background-color: #f8fbfd;
+    border: 1px solid #d9dee7;
+    border-radius: 14px;
+    max-width: 900px;
+}
+
+.video-section h2 {
+    color: #023E8A;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.video-section p {
+    color: #374151;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.youtube-box {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f1f2f4;
+    box-shadow: 0 8px 20px rgba(2, 62, 138, 0.10);
+}
+
+.youtube-box iframe {
+    width: 100%;
+    height: 420px;
+    border: none;
+    display: block;
+}
+
+.video-link {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.video-link a {
+    color: #0077B6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.video-link a:hover {
+    text-decoration: underline;
+}
+
 /* SKILLS PAGE */
 .skills-top {
     padding: 35px 0 25px;
