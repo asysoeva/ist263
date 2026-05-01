@@ -164,88 +164,70 @@ img {
     color: #023E8A;
 }
 
-/* TENNIS PAGE */
-.page-title {
-    padding: 35px 0 20px;
+/* TENNIS PAGE FRAME */
+.container {
+    width: 86%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.page-title h2 {
-    color: #023E8A;
-    font-size: 30px;
-    margin-bottom: 5px;
-}
-
-.page-title p {
-    color: #6b7280;
-    margin-top: 0;
+.banner-image {
+    margin: 40px 0 55px;
 }
 
 .banner-image img {
     width: 100%;
-    height: 300px;
+    height: 320px;
     object-fit: cover;
-    border-radius: 12px;
-    margin: 20px 0 45px;
+    object-position: center;
+    border-radius: 0;
 }
 
+/* THREE TEXT COLUMNS */
 .three-column {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
-    margin-bottom: 45px;
+    gap: 34px;
+    margin-bottom: 55px;
 }
 
 .text-card {
-    border-left: 5px solid #0077B6;
-    padding: 18px 20px;
-    background-color: #f8fbfd;
-    border-radius: 8px;
+    border-left: 5px solid #111111;
+    padding-left: 18px;
 }
 
 .text-card h2 {
-    font-size: 19px;
-    color: #023E8A;
+    font-size: 20px;
+    line-height: 1.25;
     margin-top: 0;
+    margin-bottom: 14px;
+    color: #111111;
 }
 
 .text-card p,
 .text-card li {
-    color: #4b5563;
-    font-size: 15px;
+    font-size: 14px;
+    color: #1f2937;
 }
 
+.text-card ul {
+    padding-left: 18px;
+    margin-top: 0;
+}
+
+/* TENNIS PHOTO ROW */
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 26px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 .photo-grid img {
     width: 100%;
-    height: 260px;
+    height: 280px;
     object-fit: cover;
-    border-radius: 12px;
-}
-
-.video-section {
-    margin: 20px 0 60px;
-}
-
-.video-section h2 {
-    color: #023E8A;
-}
-
-.video-box {
-    width: 100%;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #d9dee7;
-}
-
-.video-box video {
-    width: 100%;
-    display: block;
+    object-position: center;
 }
 
 /* SKILLS PAGE */
