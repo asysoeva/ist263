@@ -2,55 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="color.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tennis - Anastasia Sysoeva</title>
+    <link rel="stylesheet" href="color.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <h1>Anastasia Sysoeva</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="tennis.html">Tennis</a>
-            <a href="skills.html">Skills/Projects/Contact</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tennis.html" class="active">Tennis</a></li>
+                <li><a href="skills.html">Skills/Projects/Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <img src="images/tennis-banner.jpg" alt="Tennis court or tennis action photo">
+    <main class="container">
+        <section class="page-title">
+            <h2>My Tennis Journey</h2>
+            <p>A look into my experience as a Division I student-athlete.</p>
         </section>
 
-        <section>
-            <article>
+        <section class="banner-image">
+            <img src="images/tennis-banner.jpg" alt="Tennis action photo or tennis court">
+        </section>
+
+        <section class="three-column">
+            <article class="text-card">
                 <h2>My Tennis Journey</h2>
-                <p>Starting from the age of five, tennis has been a defining rhythm of my life. From local tournaments to competing at a national level, match play has taught me resilience, discipline, and the pursuit of excellence on court.</p>
+                <p>Starting from the age of five, tennis has been a defining part of my life. From junior tournaments to competing at the Division I level, the sport has taught me resilience, discipline, and the importance of staying composed under pressure.</p>
             </article>
 
-            <article>
-                <h2>Student Athlete Life</h2>
-                <p>Balancing a rigorous academic schedule with hours of weekly training has shaped my mindset. Being a student-athlete means time management, maintaining peak condition, and representing my institution with pride.</p>
+            <article class="text-card">
+                <h2>Student-Athlete Life</h2>
+                <p>Balancing school, travel, practice, lifts, and matches has shaped the way I manage my time. Tennis has helped me build consistency, confidence, and the ability to perform while representing my university.</p>
             </article>
 
-            <article>
-                <h2>Achievements, Leadership, and Stats</h2>
+            <article class="text-card">
+                <h2>Achievements</h2>
                 <ul>
-                    <li>Team Captain, Division I Tennis Team</li>
-                    <li>All-Conference First Team</li>
-                    <li>Top collegiate rankings in doubles competition</li>
-                    <li>Strong academic performance as a student-athlete</li>
-                    <li>Extensive tournament and match experience</li>
+                    <li>Division I tennis player</li>
+                    <li>Team captain experience</li>
+                    <li>Top collegiate doubles ranking</li>
+                    <li>Strong academic performance</li>
+                    <li>Extensive tournament experience</li>
                 </ul>
             </article>
         </section>
 
-        <section>
+        <section class="video-section">
+            <h2>Match and Training Highlights</h2>
+            <div class="video-box">
+                <video controls>
+                    <source src="images/tennis-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section class="photo-grid">
             <img src="images/racket.jpg" alt="Tennis racket and ball">
             <img src="images/action-photo.jpg" alt="Anastasia Sysoeva playing tennis">
             <img src="images/court.jpg" alt="Outdoor tennis court">
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2026 Anastasia Sysoeva. Student Portfolio Project.</p>
     </footer>
 </body>
