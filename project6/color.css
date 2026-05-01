@@ -593,3 +593,19 @@ input[type="submit"]:hover {
     color: inherit;
     display: block;
 }
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card-link h2,
+.card-link p,
+.card-link div {
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: none;
+}
