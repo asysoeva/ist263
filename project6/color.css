@@ -587,3 +587,9 @@ input[type="submit"]:hover {
 .video-link a:hover {
     text-decoration: underline;
 }
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
