@@ -647,3 +647,9 @@ label {
 .video-link a:hover {
     color: #023E8A;
 }
+
+/* FOOTER CONTRAST FIX FOR WAVE */
+.site-footer,
+.site-footer p {
+    color: #1f2937;
+}
