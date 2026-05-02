@@ -569,3 +569,21 @@ input[type="submit"]:hover {
         background-color: #fff0c7;
     }
 }
+
+form {
+    border: 1px solid #e7d29a;
+    border-top: 6px solid #90E0EF;
+    border-radius: 14px;
+    padding: 28px;
+    background: linear-gradient(180deg, #ffffff, #f5fbff);
+    box-shadow: 0 6px 18px rgba(2, 62, 138, 0.06);
+}
+
+form p {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+textarea {
+    resize: none;
+}
