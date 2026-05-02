@@ -587,3 +587,41 @@ form p {
 textarea {
     resize: none;
 }
+
+/* WAVE CONTRAST FIX */
+
+p,
+li,
+span,
+label {
+    color: #1f2937;
+}
+
+.feature-card p,
+.skills-card p,
+.skills-card li,
+.project-box p,
+.info-box p,
+.video-section p,
+.text-card p,
+.text-card li,
+.skills-top p {
+    color: #1f2937;
+}
+
+.site-footer,
+.site-footer p {
+    color: #374151;
+}
+
+.contact-link,
+.project-video-link,
+.video-link a {
+    color: #005A8D;
+}
+
+.contact-link:hover,
+.project-video-link:hover,
+.video-link a:hover {
+    color: #023E8A;
+}
